@@ -1,0 +1,63 @@
+﻿一、小程序常见问题
+
+1、API请求
+
+2、基础库兼容
+
+3、不同页面传值方式
+
+
+二、微信开发者工具
+右侧 → 详情 点击
+
+将下方的 不校验合法域名、web-view（业务域名）、TLS版本以及HTTPS证书
+
+
+
+三、API请求
+
+wx.request({
+      url: 'http://127.0.0.0:5000',
+      method:'GET',
+      success: function(res){
+        console.log(res)
+        self.setData({
+          proList: res.data
+        })
+      }
+})
+
+
+四、基础库兼容
+1、如：wx.setClipboardData(OBJECT),
+	基础库 1.1.0 开始支持，低版本需做 兼容处理
+
+	if(wx.setClipboardData){
+	  console.log('复制成功！')
+	}else{
+	  console.log('版本过低！')
+	}
+
+2、wx.canIUse
+	判断小程序的API，回调，参数，组件等是否在当前版本可用。
+
+3、wx.getSystemInfo
+	判断小程序的版本
+
+4、wx.getSystemInfoSync wx.getSystemInfo 的同步版本
+	最重要：SDKVersion	string	客户端基础库版本
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

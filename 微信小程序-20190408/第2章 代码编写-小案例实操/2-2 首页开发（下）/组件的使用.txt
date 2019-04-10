@@ -1,0 +1,55 @@
+一、常用组件
+	1、view	视图容器
+	2、image 图片。支持JPG、PNG、SVG格式，2.3.0 起支持云文件ID。
+	3、text 文本
+		只有text才支持换行，反斜杠“\”
+		\n 换行
+
+
+二、绑定事件
+	1、bindlongtap 长按
+	2、bindtap 点击
+	3、bindtouchcancel 触摸取消
+	4、bindtouchend 触摸结束
+	5、bindtouchmove 在屏幕上移动
+	6、bindtouchstart 触屏开始
+
+
+三、获取index
+<view class="pro-item" wx:for="{{proList}}" bindtap='toDetail' data-index='{{index}}'>
+
+toDetail: function(e){
+    console.log(e)
+    var index = e.currentTarget.dataset.index
+    console.log(index)
+}
+
+
+四、表单组件
+	button
+	<button open-type="contact" class="btn-ask">
+           <image src="/images/btn-ask.png" />
+        </button> 
+
+
+样式：
+.btn-ask {
+  float:left;
+  width: 224rpx;
+  height:52rpx;
+  margin-left: 20rpx;
+  padding: 0 ;
+  line-height: 1;
+}
+.btn-ask image {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+

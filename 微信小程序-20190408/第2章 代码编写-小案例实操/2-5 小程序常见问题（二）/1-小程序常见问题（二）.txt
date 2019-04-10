@@ -1,0 +1,44 @@
+﻿
+一、不同页面传值方式
+
+1、简易传值方式：
+
+wx.navigateTo({
+      url: '/pages/detail/detail?title='+title
+})
+
+在另外一个页面里：
+/**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    console.log('#', options)
+  },
+
+----------------------------------------------
+
+2、在app.js，定义一个全局的变量
+
+ globalData: {
+    userInfo: null,
+    host: 'http://localhost:5000'
+  }
+
+在index/index.js中获取，
+ url: app.globalData.host,
+
+能获取，就能设置
+app.globalData.host='http://localhost:3000'
+
+----------------------------------------------
+
+3、通过本地缓存进行变量的读取
+写入： wx.setStorageSync('title', title)
+读取： wx.getStorageSync('title')
+
+官方：本地缓存最大支持10M
+（1）文本不太可能写满
+（2）音频与视频就不建议写了，太大了
+
+
+

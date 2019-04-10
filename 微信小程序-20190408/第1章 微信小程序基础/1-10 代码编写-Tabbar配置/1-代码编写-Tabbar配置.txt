@@ -1,0 +1,32 @@
+一、框架
+	https://developers.weixin.qq.com/miniprogram/dev/reference/
+
+
+二、小程序配置
+	1、找到：tabBar
+	2、tabBar可以在页面的顶部，也可以在页面的底部
+	3、……
+
+
+三、所有的配置都是在app.json中进行配置
+	1、
+
+
+"tabBar": {
+    "selectedColor": "#0f0", // 选中文字的演示
+    "list": [{
+      "pagePath": "pages/index/index", // 页面路由，首页的路由
+      "text": "首页", // 文字
+      "iconPath": "images/ic_home_normal.png", // 默认图片
+      "selectedIconPath": "images/ic_home_pressed.png" // 选中图片
+    },
+
+   {
+      "pagePath": "pages/join/join", // 页面路由，首页的路由
+      "text": "加入", // 文字
+      "iconPath": "images/ic_join_normal.png", // 默认图片
+      "selectedIconPath": "images/ic_join_pressed.png" // 选中图片
+    }
+   ]	
+},
+	

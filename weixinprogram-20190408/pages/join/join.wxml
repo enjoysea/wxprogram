@@ -1,0 +1,17 @@
+<!--pages/join/join.wxml-->
+<image class="banner" src="/images/about.jpg"></image>
+<view class="block">
+  <view class="block-title">关于我们</view>
+  <text class="block-desc">描述信息描述信息描述信息，描述信息描述信息描述信息描述信息描述信息描述信息描述信息描，述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息，描述信息</text>
+</view>
+<view class="block">
+  <view class="block-title">关于我们</view>
+  <text class="block-desc">描述信息描述信息描述信息，描述信息描述信息描述信息描述信息描述信息描述信息描述信息描，述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息，描述信息</text>
+</view>
+<view class="block">
+  <view class="block-title">关于我们</view>
+  <text class="block-desc">描述信息描述信息描述信息，描述信息描述信息描述信息描述信息描述信息描述信息描述信息描，述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息，描述信息</text>
+</view>
+<view class="footer">
+  <button bindtap="tel">电话咨询</button>
+</view>

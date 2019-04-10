@@ -1,0 +1,13 @@
+﻿
+一、text组件设置样式需要注意的问题
+
+<text class="block-desc">描述信息</text>
+
+.block-desc{
+  display:block; // 一定要设置块状元素，下面才能设置padding
+  color:#666;
+  line-height:1.6;
+  font-size:30rpx;
+  padding:0 30px 30px;
+}
+

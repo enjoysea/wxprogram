@@ -1,0 +1,80 @@
+
+一、通过数据渲染页面
+	更像我们用过的Vue或React
+
+
+二、Page的生命周期配置
+	https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/page.html
+
+
+三、app.js
+	入口文件，全局的变量或方法都可以写在这里
+
+
+四、app.json
+	小程序的基本配置
+
+1、路由配置
+ "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+
+2、对整个小程序框架的一个设置
+主要是顶部的一个设置
+
+"window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+},
+
+如修改成：
+"window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0f0",
+    "navigationBarTitleText": "这是第一个测试小程序demo",
+    "navigationBarTextStyle": "white"
+},
+
+
+3、增加一个路由
+	"pages/join/join",
+
+4、自定义编译
+	模式名称：join
+	启动页面：pages/join/join
+
+	就跳转到这个页面来了
+
+五、app.wxss
+	一些公用的css都可以写在这里
+
+
+六、project.config.json
+	每一个开发者本地生成的一些配置
+	这个配置是 + 添加编译模式这个里面设置的
+	设置值在这里都有对应的增加
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

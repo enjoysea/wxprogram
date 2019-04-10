@@ -1,0 +1,30 @@
+﻿一、小程序官方文档
+	1、官方文档地址：https://mp.weixin.qq.com/debug/wxadoc/dev
+
+	2、主要看小程序开发 → API
+
+	3、教程
+		起步……
+		如何申请账号……
+
+	4、框架
+		小程序框架参考文档
+			如何渲染的、有一些什么配置			
+			WXML 与 HTML比较类似
+			WXS 与 CSS比较类似
+			……
+	5、组件
+		小程序提供的官方组件
+			开发小程序必须从它所提供的组件中进行选择
+			不能使用div、p、uls之类的html标签了	
+
+	6、工具
+		开发小程序，必须使用官方提供的“微信开发者工具”
+		可以点击“微信开发者工具”去下载
+
+	7、Q&A 
+		常见问题（https://mp.weixin.qq.com/debug/wxadoc/dev/qa.html）
+		如果还没有得到解决
+		可以到开发者社区（https://developers.weixin.qq.com）
+
+

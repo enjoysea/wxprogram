@@ -1,0 +1,3 @@
+
+微信小程序设计规范
+	参考：https://jingyan.baidu.com/article/f25ef25483935f482c1b829a.html
