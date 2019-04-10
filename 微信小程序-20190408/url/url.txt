@@ -1,0 +1,21 @@
+﻿
+1、微信小程序官网注册
+	https://mp.weixin.qq.com/
+
+
+2、小程序官方文档
+	https://mp.weixin.qq.com/debug/wxadoc/dev
+
+
+3、常见问题
+	https://mp.weixin.qq.com/debug/wxadoc/dev/qa.html
+
+
+4、开发者社区
+	https://developers.weixin.qq.com
+
+
+5、Page的生命周期配置
+	https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/page.html
+
+	

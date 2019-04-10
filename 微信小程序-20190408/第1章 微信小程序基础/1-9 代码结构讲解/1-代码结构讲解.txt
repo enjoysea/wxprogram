@@ -14,6 +14,7 @@
 四、app.json
 	小程序的基本配置
 
+
 1、路由配置
  "pages": [
     "pages/index/index",
@@ -30,7 +31,7 @@
     "navigationBarTextStyle": "black"
 },
 
-如修改成：
+比如修改成：
 "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#0f0",

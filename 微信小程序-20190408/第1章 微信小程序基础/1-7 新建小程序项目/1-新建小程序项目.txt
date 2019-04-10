@@ -1,5 +1,10 @@
 ﻿
 一、新建小程序项目
 
+
 二、如何查看AppID
+
+	wxfe4950b068f9b012
+
+	https://mp.weixin.qq.com/wxopen/devprofile?action=get_profile&token=1398955609
 
