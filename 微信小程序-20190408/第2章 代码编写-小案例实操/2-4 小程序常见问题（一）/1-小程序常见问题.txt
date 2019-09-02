@@ -10,11 +10,14 @@
 二、微信开发者工具
 右侧 → 详情 点击
 
-将下方的 不校验合法域名、web-view（业务域名）、TLS版本以及HTTPS证书
+将下方的 不校验合法域名、web-view（业务域名）、TLS版本以及HTTPS证书 勾上
 
 
 
 三、API请求
+onLoad: function () {  
+    this.getProList()
+}
 
 wx.request({
       url: 'http://127.0.0.0:5000',

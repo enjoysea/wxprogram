@@ -25,7 +25,10 @@ wx.navigateTo({
   }
 
 在index/index.js中获取，
- url: app.globalData.host,
+1、必须有获取应用实例
+const app = getApp()
+
+2、url: app.globalData.host,
 
 能获取，就能设置
 app.globalData.host='http://localhost:3000'

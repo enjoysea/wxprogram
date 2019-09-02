@@ -25,7 +25,15 @@ toDetail: function(e){
 }
 
 
-四、表单组件
+四、定义变量方式二
+onLoad: function () { 
+    this.setData({
+      test: '01'
+    })  
+}
+
+
+五、表单组件
 	button
 	<button open-type="contact" class="btn-ask">
            <image src="/images/btn-ask.png" />

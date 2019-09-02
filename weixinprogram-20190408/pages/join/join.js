@@ -65,7 +65,7 @@ Page({
   },
   tel: function(){
     wx.makePhoneCall({
-      phoneNumber: '13909988888' // 仅为示例，并非真实的电话号码
+      phoneNumber: '13800138000' // 仅为示例，并非真实的电话号码
     })
   }
 })
