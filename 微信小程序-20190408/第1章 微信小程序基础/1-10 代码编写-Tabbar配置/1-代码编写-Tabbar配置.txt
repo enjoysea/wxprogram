@@ -3,15 +3,16 @@
 
 
 二、框架 → 小程序配置
-	1、找到：tabBar
+	1、找到：tabBar，点开
 	2、tabBar可以在页面的顶部，也可以在页面的底部
+	3、当 position 为 top 时，不显示 icon
+	4、其中 list 接受一个数组，只能配置最少 2 个、最多 5 个 tab
 	3、……
 
 
-三、所有的配置都是在app.json中进行配置
-	
+三、所有的配置都是在app.json中进行配置	
 "tabBar": {
-    "selectedColor": "#0f0", // 选中文字的演示
+    "selectedColor": "#0f0", // 选中文字的颜色
     "list": [{
       "pagePath": "pages/index/index", // 页面路由，首页的路由
       "text": "首页", // 文字
@@ -20,7 +21,7 @@
     },
 
    {
-      "pagePath": "pages/join/join", // 页面路由，首页的路由
+      "pagePath": "pages/join/join", // 页面路由，加入的路由
       "text": "加入", // 文字
       "iconPath": "images/ic_join_normal.png", // 默认图片
       "selectedIconPath": "images/ic_join_pressed.png" // 选中图片

@@ -6,31 +6,37 @@
 二、Page的生命周期配置
 	https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/page.html
 
+三、小程序的代码结构
+1、images
 
-三、app.js
-	入口文件，全局的变量或方法都可以写在这里
+2、pages - 路由页面
+每一个模块都包括
+xx.js
+xx.json
+xx.wxml	-可以理解为html，是微信提供的组件，与html是有区别的
+xx.wxss	-可以理解为css
 
+3、utils	-公用的方法
 
-四、app.json
-	小程序的基本配置
+4、与pages同级还可以创建其他目录（如：template、组件相关的都可以塞在这个目录里）
 
+5、app.js	-入口文件，全局的变量或方法都可以写在这里
 
-1、路由配置
+6、app.json  -小程序的基本配置
+（1）路由配置
  "pages": [
     "pages/index/index",
     "pages/logs/logs"
   ],
 
-2、对整个小程序框架的一个设置
-主要是顶部的一个设置
-
+（2）对整个小程序框架的一个设置
+主要是对顶部的一个设置
 "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
 },
-
 比如修改成：
 "window": {
     "backgroundTextStyle": "light",
@@ -39,42 +45,21 @@
     "navigationBarTextStyle": "white"
 },
 
-
-3、增加一个路由
+（3）增加一个路由
 	"pages/join/join",
+	pages下就多了一个目录：pags/join
 
-4、自定义编译
+（4）自定义编译
 	模式名称：join
 	启动页面：pages/join/join
-
 	就跳转到这个页面来了
 
-五、app.wxss
-	一些公用的css都可以写在这里
+7、app.wxss  -一些公用的css都可以写在这里
 
-
-六、project.config.json
+8、project.config.json
 	每一个开发者本地生成的一些配置
 	这个配置是 + 添加编译模式这个里面设置的
 	设置值在这里都有对应的增加
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

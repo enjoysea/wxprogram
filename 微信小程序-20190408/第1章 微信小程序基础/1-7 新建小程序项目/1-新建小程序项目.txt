@@ -1,10 +1,18 @@
 ﻿
 一、新建小程序项目
+1、打开微信web开发者工具
+2、扫码
+3、在手机上点击确认登录
+4、如果有AppID，直接写，没有可以体验
+5、打√ 建立普通快速启动模板
 
 
 二、如何查看AppID
 
 	wxfe4950b068f9b012
 
-	https://mp.weixin.qq.com/wxopen/devprofile?action=get_profile&token=1398955609
+	1、https://mp.weixin.qq.com/
+	2、右侧：点击查看详情
+		https://mp.weixin.qq.com/wxopen/basicprofile?action=index&token=1403118725&lang=zh_CN
+	3、可以看到：AppID(小程序ID)
 
