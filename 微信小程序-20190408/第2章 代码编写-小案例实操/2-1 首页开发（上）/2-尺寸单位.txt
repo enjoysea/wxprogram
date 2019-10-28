@@ -1,5 +1,5 @@
 
-一、尺寸单位
+一、尺寸单位 rpx
 	参考：https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxss.html
 	1、这里都是用rpx做单位，微信默认是以ipone6 为基准来设计的宽度
 	2、ipone6的实际网页宽度为375，转换成rpx，是750rpx

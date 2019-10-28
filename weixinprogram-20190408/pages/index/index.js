@@ -52,7 +52,7 @@ Page({
   getProList: function(){
     var self = this
     console.log(app.globalData.host)
-    app.globalData.host='test'
+    // app.globalData.host='test'
     wx.request({
       url: app.globalData.host,
       method:'GET',
@@ -63,7 +63,6 @@ Page({
         })
       },
       fail: function(){
-
       }
     })
   },

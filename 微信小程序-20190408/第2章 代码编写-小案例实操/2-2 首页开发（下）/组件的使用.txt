@@ -9,7 +9,7 @@
 二、绑定事件
 	1、bindlongtap 长按
 	2、bindtap 点击
-	3、bindtouchcancel 触摸取消
+	3、bindtouchcancel 触摸取消（手指触摸动作被打断，如弹窗和来电提醒）
 	4、bindtouchend 触摸结束
 	5、bindtouchmove 在屏幕上移动
 	6、bindtouchstart 触屏开始
@@ -34,10 +34,11 @@ onLoad: function () {
 
 
 五、表单组件
-	button
+	button：<button open-type="contact">进入客服会话</button>
+
 	<button open-type="contact" class="btn-ask">
-           <image src="/images/btn-ask.png" />
-        </button> 
+                    <image src="/images/btn-ask.png" />
+                </button> 
 
 
 样式：
@@ -46,8 +47,8 @@ onLoad: function () {
   width: 224rpx;
   height:52rpx;
   margin-left: 20rpx;
-  padding: 0 ;
-  line-height: 1;
+  padding: 0 ;  //reset padding
+  line-height: 1; //覆盖父级的line-height
 }
 .btn-ask image {
   width: 100%;

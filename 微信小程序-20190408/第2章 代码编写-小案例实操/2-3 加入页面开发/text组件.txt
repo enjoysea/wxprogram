@@ -11,3 +11,17 @@
   padding:0 30px 30px;
 }
 
+二、设置页面背景色
+page {
+  background:#f3f3f3;
+}
+
+三、打电话
+<button bindtap="tel">电话咨询</button>
+
+tel: function(){
+    wx.makePhoneCall({
+      phoneNumber: '13800138000' // 仅为示例，并非真实的电话号码
+    })
+}
+

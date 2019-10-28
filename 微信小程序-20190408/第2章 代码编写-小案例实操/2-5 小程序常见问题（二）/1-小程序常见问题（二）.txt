@@ -25,17 +25,16 @@ wx.navigateTo({
   }
 
 在index/index.js中获取，
-1、必须有获取应用实例
+1、必须先获取应用实例
 const app = getApp()
 
 2、url: app.globalData.host,
-
 能获取，就能设置
 app.globalData.host='http://localhost:3000'
 
 ----------------------------------------------
 
-3、通过本地缓存进行变量的读取
+3、通过本地缓存进行变量的读取（最常见的传值方式）
 写入： wx.setStorageSync('title', title)
 读取： wx.getStorageSync('title')
 

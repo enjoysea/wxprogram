@@ -1,9 +1,9 @@
 
-
 一、轮播图组件
-	1、点击“组件”
-	2、视图容器 → swiper
+	1、参考：https://mp.weixin.qq.com/wxamp/home/guide?token=1685292151&lang=zh_CN
+	2、点击“文档”
+	3、点击“组件”
+	4、视图容器 → swiper
 
-二、rpx
-以iphone6 为基准，375px
-转换成rpx是750rpx
+二、注意：图片路径写“绝对路径“，以“/”开头
+

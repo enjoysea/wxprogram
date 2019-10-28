@@ -1,5 +1,5 @@
-﻿一、小程序常见问题
-
+﻿
+一、小程序常见问题
 1、API请求
 
 2、基础库兼容
@@ -11,10 +11,12 @@
 右侧 → 详情 点击
 
 将下方的 不校验合法域名、web-view（业务域名）、TLS版本以及HTTPS证书 勾上
+因为：这里为了演示，开启了一个本地服务
 
 
 
-三、API请求
+三、发起请求：API → 网络
+API请求实例
 onLoad: function () {  
     this.getProList()
 }
@@ -32,7 +34,7 @@ wx.request({
 
 
 四、基础库兼容
-1、如：wx.setClipboardData(OBJECT),
+1、如：剪切板 wx.setClipboardData(OBJECT),
 	基础库 1.1.0 开始支持，低版本需做 兼容处理
 
 	if(wx.setClipboardData){
@@ -42,13 +44,17 @@ wx.request({
 	}
 
 2、wx.canIUse
+	API → 基础 → wx.canIUse
 	判断小程序的API，回调，参数，组件等是否在当前版本可用。
 
 3、wx.getSystemInfo
 	判断小程序的版本
 
-4、wx.getSystemInfoSync wx.getSystemInfo 的同步版本
-	最重要：SDKVersion	string	客户端基础库版本
+4、wx.getSystemInfoSync	wx.getSystemInfo 的同步版本
+	最重要：SDKVersion	string
+	就是官方说的API支持到哪个版本	
+
+	客户端基础库版本
 
 
 

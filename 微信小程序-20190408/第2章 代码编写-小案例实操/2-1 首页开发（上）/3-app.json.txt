@@ -1,0 +1,11 @@
+﻿
+一、
+"window": {
+    "navigationBarBackgroundColor": "#2e5e86",  //顶部导航背景色
+    "navigationBarTitleText": "信贷DEMO"  //设置导航栏标题字体的颜色
+},
+
+二、
+"tabBar": {
+    "selectedColor": "#2e5e86",   //tab文字选中的颜色    
+},
